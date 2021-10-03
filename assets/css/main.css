@@ -66,8 +66,12 @@
   width: 100%;
 }
 
-.fs1 {
+.fs0 {
   font-size: 1rem;
+}
+
+.fs1 {
+  font-size: 1.5rem;
 }
 
 .fs2 {
@@ -75,35 +79,35 @@
 }
 
 .fs3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .fs4 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .fs5 {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 .fs6 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 .fs7 {
-  font-size: 7rem;
+  font-size: 4.5rem;
 }
 
 .fs8 {
-  font-size: 8rem;
+  font-size: 5rem;
 }
 
 .fs9 {
-  font-size: 9rem;
+  font-size: 5.5rem;
 }
 
 .fs10 {
-  font-size: 10rem;
+  font-size: 6rem;
 }
 
 .fw1 {
@@ -647,6 +651,14 @@
   max-width: 80%;
 }
 
+.img-60 {
+  max-width: 60%;
+}
+
+.img-50 {
+  max-width: 50%;
+}
+
 .widget__item {
   height: 75px;
   border: 1px solid gray;
@@ -769,6 +781,10 @@ ul, li {
   width: 100%;
 }
 
+.w-80 {
+  width: 80%;
+}
+
 .h100 {
   height: 100%;
 }
@@ -815,6 +831,14 @@ ul, li {
 
 .github {
   color: #202020;
+}
+
+.text-right {
+  text-align: right;
+}
+
+p {
+  line-height: 2em;
 }
 
 /*# sourceMappingURL=main.css.map */

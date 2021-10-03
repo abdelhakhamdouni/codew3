@@ -11,10 +11,10 @@ $fontMax: 10;
 }
 
 @function font-size($nmbre) {  
-    @return #{$nmbre}rem;  
+    @return #{$nmbre / 2 + 1}rem;  
 }
 // FONT SIZE
-@for $i from 1 through $fontMax {  
+@for $i from 0 through $fontMax {  
     .fs#{$i} { font-size: font-size($i) };  
 }
 // FONT WEIGHT

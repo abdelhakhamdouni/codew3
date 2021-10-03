@@ -52,6 +52,7 @@ ul, li {
 // .p5{padding: 2.5em;}
 
 .w-100{width: 100%;}
+.w-80{width: 80%;}
 .h100{height: 100%;}
 
 .border-left{border-left: 1px solid lightgray;}
@@ -69,3 +70,11 @@ ul, li {
 .twitter{color: $twitter;}
 .instagram{color: $instagram;}
 .github{color: $github;}
+
+.text-right{
+    text-align: right;
+}
+
+p{
+    line-height: 2em;
+}
