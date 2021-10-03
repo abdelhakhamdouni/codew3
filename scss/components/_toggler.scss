@@ -1,0 +1,50 @@
+.menu-toggler{
+    cursor: pointer;
+    &:hover{
+        span:nth-child(2){
+            width: 2em;
+        }
+    }
+    span{
+        width: 2em;
+        height: 3px;
+        margin: 2px;
+        background-color: midnightblue;
+        transition: all .5s;
+        &:nth-child(2){
+            width: 1em;
+            align-self: flex-end;
+        }
+    }
+    &.show{
+        span:nth-child(2){
+            display: none;
+        }
+        span{
+            margin: 0;
+        }
+        span:first-of-type{
+            transform: rotate(45deg) translateY(2px);
+        }
+        span:last-of-type{
+            transform: rotate(-45deg) translateY(-2px);
+        }
+    }
+}
+
+.close{
+    align-self: flex-start;
+    span:nth-child(2){
+        display: none;
+    }
+    span{
+        margin: 0;
+    }
+    span:first-of-type{
+        transform: rotate(45deg) translateY(2px);
+    }
+    span:last-of-type{
+        transform: rotate(-45deg) translateY(-2px);
+    }
+    
+}

@@ -1,0 +1,26 @@
+.widget__item{
+    height: 75px;
+    border: 1px solid gray;
+    padding: 0;
+    margin: 0;
+    .widget__item-image{
+        flex-basis: 30%;
+        height: 100%;
+        margin-right: 1em;
+        img{
+            max-height: 100%;
+        }
+    }
+    .widget__item-body{
+        padding: 1em;
+        .widget__item-body-title{
+            font-size: 1em;
+            padding: 0;
+            margin: 0;
+            font-weight: 600;
+        }
+        .widget__item-body-condence{
+            font-size: .7em;
+        }
+    }
+}

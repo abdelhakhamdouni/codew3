@@ -1,0 +1,12 @@
+.conteneur{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1em;
+    height: 100%;
+    padding: 0;
+}
+@media (max-width: 990px) {
+    .conteneur{
+        max-width: 100%;
+    }
+}

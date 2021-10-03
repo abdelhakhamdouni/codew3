@@ -1,0 +1,75 @@
+$total: 12;
+$padMax: 5;
+$fontMax: 10;
+
+
+@function column-width($col) {  
+    @return percentage( $col / $total);  
+}  
+@for $i from 1 through $total {  
+    .col#{$i} { width: column-width($i) };  
+}
+
+@function font-size($nmbre) {  
+    @return #{$nmbre}rem;  
+}
+// FONT SIZE
+@for $i from 1 through $fontMax {  
+    .fs#{$i} { font-size: font-size($i) };  
+}
+// FONT WEIGHT
+@for $i from 1 through 9 {  
+    .fw#{$i} { font-weight: $i*100 };  
+}
+
+// BG COLOR
+
+@each $name, $color in $colors {
+    .bg-#{$name} { background-color: $color };
+}
+
+// TEXT COLOR
+@each $name, $color in $colors {
+    .text-#{$name} { color: $color };
+}
+
+
+@function margin($nmbre) {  
+    @return #{$nmbre * .25}em;  
+}  
+@for $i from 0 through $padMax {  
+    .m#{$i} { margin: margin($i) };  
+    .ml#{$i} { margin-left: margin($i) };  
+    .mr#{$i} { margin-right: margin($i) };  
+    .mt#{$i} { margin-top: margin($i) };  
+    .mb#{$i} { margin-bottom: margin($i) };  
+
+    .my#{$i} { 
+        margin-top: margin($i); 
+        margin-bottom: margin($i); 
+    };  
+
+    .mx#{$i} { 
+        margin-left: margin($i); 
+        margin-right: margin($i); 
+    };  
+}
+
+@for $i from 0 through $padMax {  
+    .p#{$i} {  padding: margin($i) };  
+    .pl#{$i} { padding-left: margin($i) };  
+    .pr#{$i} { padding-right: margin($i) };  
+    .pt#{$i} { padding-top: margin($i) };  
+    .pb#{$i} { padding-bottom: margin($i) };  
+
+    .py#{$i} { 
+        padding-top: margin($i);
+        padding-bottom: margin($i); 
+    };  
+
+    .px#{$i} { 
+        padding-left: margin($i); 
+        padding-right: margin($i); 
+    };  
+}
+
