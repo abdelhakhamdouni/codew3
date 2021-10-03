@@ -1,0 +1,15 @@
+{
+    "name": "abdelhak/codew-2",
+    "autoload": {
+        "psr-4": {
+            "Codew2\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "abdelhakhamdouni",
+            "email": "abdelhakhamdouni@sfr.fr"
+        }
+    ],
+    "require": {}
+}
