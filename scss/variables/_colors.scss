@@ -53,6 +53,8 @@ $secondary: $pink;
 $white: $white;
 $ambre: #4d4d4d;
 
+$light: #858585;
+
 $text: #535353;
 $dark: #303030;
 
@@ -66,4 +68,5 @@ $colors: ("primary": $primary,
           "secondary": $secondary,
           "ambre": #4d4d4d,
           "text": #272727,
-          "light": #858585);
+          "white": $white,
+          "light": $light);

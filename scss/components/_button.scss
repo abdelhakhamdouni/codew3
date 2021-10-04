@@ -1,0 +1,10 @@
+.button{
+    transition: all .3s;
+    cursor: pointer;
+    box-shadow: 0 0 4px lightgray;
+    &:hover{
+        background-color: $primary;
+        color: $white;
+        box-shadow: 0 0 12px lightgray;
+    }
+}

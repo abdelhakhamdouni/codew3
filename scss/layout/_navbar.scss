@@ -9,14 +9,22 @@
         position: relative;
     }
     .menu{
-        li a{
-            color: rgb(202, 202, 202);
-            font-weight: 500;
-            letter-spacing: .1em;
-
-            &:hover, &.active{
-                color: $dark;
-                font-weight: 500;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin: 0 1em;
+                a{
+                    color: rgb(202, 202, 202);
+                    font-weight: 500;
+                    letter-spacing: .1em;
+                    
+                    &:hover, &.active{
+                        color: $dark;
+                        font-weight: 500;
+                    }
+                }
             }
         }
         flex-grow: 1;
