@@ -1,23 +1,13 @@
 .site{
-    width: 100%;
-    display: flex;
     min-height: 200vh;
     margin-bottom: 50vh;
+    overflow-x: hidden;
+    position: relative;
     .content{
-        flex-basis: 100%;
         position: relative;
         transition: all .3s;
     }
     .sidebar{
         transition: all .3s;
-    }
-    &.showSidebar{
-        
-
-        .content{flex-basis: 75%}
-        .sidebar{
-            flex-basis: 25%;
-            padding: 1em !important;
-        }
     }
 }

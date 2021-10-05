@@ -1,4 +1,8 @@
-body{
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -6,15 +10,13 @@ body{
     box-sizing: border-box;
 
     font-family: 'Roboto', sans-serif;
-    width: 100%;
+    width: 100vw !important;
 
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 
     color: $text;
 }
-*{
-    padding: 0px;
-}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -23,7 +25,7 @@ a{
     }
 }
 
-.flex-center{
+.flex{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +33,16 @@ a{
 .column{
     flex-direction: column;
 }
+
+.fjcs{justify-content: flex-start;}
+.fjce{justify-content: flex-end;}
+.fjca{justify-content: space-around;}
+.fjcb{justify-content: space-between;}
+
+.fais{align-items: flex-start;}
+.faie{align-items: flex-end;}
+.faib{align-items: baseline;}
+.faic{align-items: center;}
 
 .center{
     text-align: center;
@@ -92,4 +104,26 @@ p{
 
 .d-none{
     display: none;
+}
+
+.sm-d-none{display: none;}
+
+.xs-order-1{order: 1}
+.xs-order-2{order: 2}
+
+@media (min-width: 576px)  {
+
+}
+@media (min-width: 768px)  {
+}
+@media (min-width: 992px)  {
+    .sm-d-none{display: none !important;}
+    .xs-order-1{order: unset}
+    .xs-order-2{order: unset}
+}
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 1400px) {
+
 }

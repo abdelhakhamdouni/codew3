@@ -10,6 +10,39 @@ $fontMax: 10;
     .col#{$i} { width: column-width($i) };  
 }
 
+@media (min-width: 576px)  {
+    @for $i from 1 through $total { 
+        .colsm#{$i} { width: column-width($i) }; 
+    } 
+}
+@media (min-width: 768px)  {
+    @for $i from 1 through $total { 
+        .coltab#{$i} { width: column-width($i) }; 
+    } 
+}
+@media (min-width: 992px)  {
+    @for $i from 1 through $total { 
+        .coldesk#{$i} { width: column-width($i) }; 
+    } 
+}
+@media (min-width: 1200px) {
+    @for $i from 1 through $total { 
+        .collg#{$i} { width: column-width($i) }; 
+    } 
+}
+@media (min-width: 1400px) {
+    @for $i from 1 through $total { 
+        .colxlg#{$i} { width: column-width($i) };
+    }  
+}
+
+//opacity
+
+@for $i from 0 through 10 {
+    .op#{$i} {opacity: $i / 10;}
+}
+
+
 @function font-size($nmbre) {  
     @return #{$nmbre / 2 + 1}rem;  
 }

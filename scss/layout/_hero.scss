@@ -1,6 +1,31 @@
-
 .hero{
     width: 100%;
     height: calc( 100vh - 75px );
-    max-height: 700px;
+    text-align: center;
+    .conteneur{
+        background-image: url('../../assets/img/bg2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 2em 1em;
+        div:last-of-type{
+            margin-bottom: 3em;
+            border: unset;
+        }
+    }
 }
+
+@media (min-width: 992px){
+    .hero{
+        width: 100%;
+        height: calc( 100vh - 75px );
+        max-height: 700px;
+        .conteneur{
+            padding: unset;
+            div:last-of-type{
+                margin-bottom: unset;
+            }
+        }
+    }
+}
+

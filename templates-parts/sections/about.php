@@ -1,12 +1,12 @@
 <!-- SERVICES SECTION -->
  <section class="border-bottom">
     <div class="conteneur p0 m0 border-left  border-right ">
-        <div class="col12 align-self-start border-bottom">
-            <div class="col4 m0 border-right">
-                <h3  class="fs1 p5 m0 fw5 uppercase text-primary border-right">À propos de CodeW</h3>
+        <div class="col12 colsm12 align-self-start border-bottom">
+            <div class="coltab4 col8 m0 flex border-right">
+                <h3 class="fs1 p5 m0 fw5 uppercase text-primary">À propos de CodeW</h3>
             </div>
         </div>
-        <div class="col12 h100 center flex-center flex-wrap py5">
+        <div class="col12 h100 center flex flex-wrap py5">
             <p class="m5 p5 fs0 text-justify text-light">
                 Passionné du développement, web en particulier, je crée des sites web et propose des services de développement d’application mobile. 
                 Je cherche la perfection, en produisant du contenu propre et lisible. 

@@ -9,16 +9,28 @@
     position: absolute;
     right: -1000px;
     transition: all 1s ease-in-out;
-    width: 30%;
+    width: 100%;
     // box-shadow: -3px 0px 4px rgb(117, 117, 117);
     border: 1px solid lightgray;
     padding: 2em 1em !important;
     &.show{
         right: 0;
+        top: 0;
         transition: all 1s ease-in-out;
     }
 }
 
 .sidebar__title{
     border-bottom: 1px solid lightgray;
+}
+
+@media (min-width: 990px){
+    .sidebar{
+        width: 50%;
+    }
+}
+@media (min-width: 1200px){
+    .sidebar{
+        width: 30%;
+    }
 }
