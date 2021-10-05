@@ -1,9 +1,9 @@
 <!-- SERVICES SECTION -->
- <section class="border-bottom">
-    <div class="conteneur p0 m0 border-left  border-right ">
+ <section class="section border-bottom">
+    <div class="conteneur h100 p0 m0 border-left  border-right ">
         <div class="col12 colsm12 align-self-start border-bottom">
             <div class="coltab4 col8 m0 flex border-right">
-                <h3 class="fs1 p5 m0 fw5 uppercase text-primary">À propos de CodeW</h3>
+                <h3 class="fs1 p3 m0 fw5 uppercase text-primary">À propos de CodeW</h3>
             </div>
         </div>
         <div class="col12 h100 center flex flex-wrap py5">
@@ -15,7 +15,7 @@
                 où le client est omniprésent durant la conception, création et teste du projet final. J’apprends le développement web, les nouvelles technologies et librairies, 
                 et je crée des sites web personnels depuis 2017.
             </p>
-            <a class="button bg-white text-primary p3 px5 border fs0">Contactez-moi <span class="fa fa-envelope ml2"></span></a>
+            <a class="button bg-white text-primary p2 px5 border fs0">Contactez-moi <span class="fa fa-envelope ml2"></span></a>
         </div>
     </div>
 </section>

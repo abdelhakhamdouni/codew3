@@ -1,22 +1,32 @@
 .sidebar{
     min-height: 100vh;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     z-index: 9999;
-    overflow: hidden;
+    overflow-x: hidden;
     justify-content: flex-start !important;
     align-items: flex-start;
     z-index: 9999;
     position: absolute;
-    right: -1000px;
-    transition: all 1s ease-in-out;
-    width: 100%;
+    right: 0;
+    width: 0;
+    top: 0;
+    transition: all .3s ease-in-out;
     // box-shadow: -3px 0px 4px rgb(117, 117, 117);
     border: 1px solid lightgray;
-    padding: 2em 1em !important;
+    padding: 0;
+    .content{
+        // opacity: 0;
+        transition-delay: .3s;
+    }
     &.show{
+        // .content{
+        //     opacity: 1 ;
+        // }
         right: 0;
-        top: 0;
-        transition: all 1s ease-in-out;
+        width: 100%;
+        transition: all .3s ease-in-out;
+        padding: 2em 1em !important;
+
     }
 }
 
@@ -25,12 +35,12 @@
 }
 
 @media (min-width: 990px){
-    .sidebar{
+    .sidebar.show{
         width: 50%;
     }
 }
 @media (min-width: 1200px){
-    .sidebar{
+    .sidebar.show{
         width: 30%;
     }
 }

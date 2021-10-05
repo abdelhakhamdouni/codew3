@@ -68,7 +68,7 @@ $fontMax: 10;
 
 
 @function margin($nmbre) {  
-    @return #{$nmbre * .25}em;  
+    @return #{$nmbre * .5}em;  
 }  
 @for $i from 0 through $padMax {  
     .m#{$i} { margin: margin($i) };  
@@ -76,12 +76,10 @@ $fontMax: 10;
     .mr#{$i} { margin-right: margin($i) };  
     .mt#{$i} { margin-top: margin($i) };  
     .mb#{$i} { margin-bottom: margin($i) };  
-
     .my#{$i} { 
         margin-top: margin($i); 
         margin-bottom: margin($i); 
     };  
-
     .mx#{$i} { 
         margin-left: margin($i); 
         margin-right: margin($i); 
@@ -94,12 +92,10 @@ $fontMax: 10;
     .pr#{$i} { padding-right: margin($i) };  
     .pt#{$i} { padding-top: margin($i) };  
     .pb#{$i} { padding-bottom: margin($i) };  
-
     .py#{$i} { 
         padding-top: margin($i);
         padding-bottom: margin($i); 
     };  
-
     .px#{$i} { 
         padding-left: margin($i); 
         padding-right: margin($i); 
